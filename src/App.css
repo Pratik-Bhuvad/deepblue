@@ -1,0 +1,22 @@
+*{
+  box-sizing: border-box;
+}
+header{
+  width: 100%; 
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3%;
+  padding-right: 0;
+  position: absolute;
+  top: 0;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+
+@media screen and (max-width:'768px') {
+    .navbar{
+      display: none;
+    }
+}
