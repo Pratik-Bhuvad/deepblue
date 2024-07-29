@@ -4,6 +4,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import About from './pages/About';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -12,18 +13,21 @@ function App() {
       <>
         <header>
           <Link to='/'>
-          <h4 className='sm:uppercase flex items-center font-extrabold text-sm leading-3 md:text-lg md:leading-5'>
-            <span>TE<br />AM</span> Techno
-          </h4>
+            <h4 className='sm:uppercase flex items-center font-extrabold text-sm leading-3 md:text-lg md:leading-5'>
+              <span>TE<br />AM</span> Techno
+            </h4>
           </Link>
           <Navbar />
         </header>
-        <main>
+        <main className='box-border h-auto'>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
           </Routes>
         </main>
+        <footer>
+          <Footer />
+        </footer>
       </>
     </Router>
   )
