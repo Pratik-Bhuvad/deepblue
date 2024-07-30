@@ -1,11 +1,11 @@
 import React from 'react'
 import Herosection from '../components/Herosection'
-import Footer from '../components/Footer'
 import './../App.css'
 
 const Home = () => {
     return (
-        <div className=' box-border w-screen h-screen'>
+        <div
+            className='box-border w-screen h-screen'>
             <Herosection />
             <section className='p-4 box-border sm:p-7 sm:px-10 sm:text-lg' id='text-info'>
                 <article id='ioc'>
@@ -37,7 +37,7 @@ const Home = () => {
                     <p>On a more localized level, individuals can contribute to ocean sustainability by making environmentally conscious choices in their daily lives. This includes selecting products that are ocean-friendly and ensuring that the food derived from the ocean is sourced sustainably. Being mindful of consumption and only taking what is necessary helps to reduce the pressure on marine resources. One of the most critical actions individuals can take is to minimize plastic use. Plastic pollution is a major threat to marine life, as plastics can entangle animals, be ingested, and lead to harmful health effects. By reducing plastic consumption and opting for alternatives, individuals can help lessen the impact of plastic pollution on the ocean. Additionally, participating in or supporting clean-up initiatives and advocating for better waste management practices can further aid in protecting marine environments.</p>
                 </article>
             </section>
-           
+
         </div>
     )
 }

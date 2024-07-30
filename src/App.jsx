@@ -5,9 +5,10 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import About from './pages/About';
 import Footer from './components/Footer';
+import { AnimatePresence } from 'framer-motion';
+import Ecosystem from './pages/Ecosystem';
 
 function App() {
-
   return (
     <Router>
       <>
@@ -20,10 +21,10 @@ function App() {
           <Navbar />
         </header>
         <main className='box-border h-auto'>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/ecosystem" element={<Ecosystem />} />
+            </Routes>
         </main>
         <footer>
           <Footer />

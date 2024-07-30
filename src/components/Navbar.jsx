@@ -44,10 +44,10 @@ const Navbar = () => {
               transition={{ duration: 0.5 }}
             >
               <Link className='link' to='/'>Home</Link>
-              <Link className='link' to='/about'>About Us</Link>
+              {/* <Link className='link' to='/aboutUs'>About Us</Link> */}
               <Link className='link' to='/ecosystem'>Ecosystem</Link>
-              <Link className='link' to='/products'>Events</Link>
-              <Link className='link' to='/forum'>Publicatons</Link>
+              <Link className='link' to='/forum'>Forum</Link>
+              <Link className='link' to='/products'>Products</Link>
               <Link className='link' to='/news'>News</Link>
               <Link className='link' to='/faq'>FAQ's</Link>
             </motion.nav>
