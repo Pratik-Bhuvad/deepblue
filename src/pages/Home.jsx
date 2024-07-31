@@ -7,7 +7,7 @@ const Home = () => {
         <div
             className='box-border w-screen h-screen'>
             <Herosection />
-            <section className='p-4 box-border sm:p-7 sm:px-10 sm:text-lg' id='text-info'>
+            <section className='p-4 box-border sm:p-7 sm:px-10 sm:text-lg text-info'>
                 <article id='ioc'>
                     <h1 className='text-3xl my-7 font-bold '>Importance Of Ocean</h1>
                     <p>
