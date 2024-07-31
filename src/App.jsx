@@ -3,15 +3,14 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
-import About from './pages/About';
 import Footer from './components/Footer';
-import { AnimatePresence } from 'framer-motion';
 import Ecosystem from './pages/Ecosystem';
+import Forum from './pages/Forum';
 
 function App() {
   return (
     <Router>
-      <div className='flex flex-col'>
+      <>
         <header>
           <Link to='/'>
             <h4 className='sm:uppercase flex items-center font-extrabold text-sm leading-3 md:text-lg md:leading-5'>
@@ -24,16 +23,15 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/ecosystem" element={<Ecosystem />} />
-              <Route path="/forum" element={<Ecosystem />} />
+              <Route path="/forum" element={<Forum />} />
               <Route path="/products" element={<Ecosystem />} />
-              <Route path="/news" element={<Ecosystem />} />
               <Route path="/faq" element={<Ecosystem />} />
             </Routes>
         </main>
         <footer>
           <Footer />
         </footer>
-      </div>
+      </>
     </Router>
   )
 }

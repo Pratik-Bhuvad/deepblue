@@ -10,7 +10,7 @@ const Ecosystem = () => {
           <p className='leading-8 mt-8 text-justify px-10 font-semibold'>At Deep Blue, our passion lies in discovering and experiencing the world’s most remarkable destinations while diligently working to preserve their natural splendor for the enjoyment of future generations. We firmly believe that travel and sustainability are inherently linked, and we are committed to promoting this harmony by encouraging all our travelers to respect and protect the delicate balance of the environments and wildlife they encounter. By fostering an ethos of responsible tourism, we aim to ensure that the beauty and biodiversity of these extraordinary places are maintained, allowing both current and future explorers to enjoy and learn from them in a sustainable manner.</p>
           <p className='leading-8 mt-8 text-justify px-10 font-semibold'>Are you eager to deepen your understanding of the extraordinary species that share our planet and learn how you can play a role in their conservation? We invite you to explore the International Union for Conservation of Nature's (IUCN) Red List of Threatened Species. This invaluable resource offers comprehensive information about the status of various species and the threats they face, providing insights into how you can contribute to their protection and preservation. By engaging with the Red List, you can stay informed and take meaningful action to support efforts aimed at safeguarding our planet’s incredible biodiversity.</p>
       </section>
-      <section className="example">Hello</section>
+      {/* <section className="example">Hello</section> */}
     </div>
   )
 }
