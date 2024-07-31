@@ -18,6 +18,23 @@ header{
   margin: 1.5% 0;
   text-align: justify;
 }
+#otherResponses *{
+  grid-template-columns: 20% 75%;
+  align-items: center;
+  justify-content: center;
+}
+#otherResponses::-webkit-scrollbar {
+  width: 5px;
+}
+
+#otherResponses::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+#otherResponses::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
 
 @media screen and (max-width:'768px') {
     .navbar{

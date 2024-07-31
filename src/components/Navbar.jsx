@@ -37,7 +37,7 @@ const Navbar = () => {
         <AnimatePresence>
           {(isVisible || window.innerWidth >= 768) && (
             <motion.nav 
-              className='absolute top-7 right-5 w-2/4 h-[50vh] sm:w-2/4 sm:h-full sm:top-0 flex-col items-start justify-evenly pl-5 bg-[#3b7ddb96] sm:flex-row sm:bg-transparent'
+              className='absolute top-7 right-5 w-2/4 h-[50vh] sm:w-2/5 sm:h-full sm:top-0 flex-col items-start justify-evenly pl-5 bg-[#3b7ddb96] sm:flex-row sm:bg-transparent'
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -47,7 +47,7 @@ const Navbar = () => {
               {/* <Link className='link' to='/aboutUs'>About Us</Link> */}
               <Link className='link' to='/ecosystem'>Ecosystem</Link>
               <Link className='link' to='/forum'>Forum</Link>
-              <Link className='link' to='/products'>Products</Link>
+              {/* <Link className='link' to='/products'>Products</Link> */}
               <Link className='link' to='/news'>News</Link>
               <Link className='link' to='/faq'>FAQ's</Link>
             </motion.nav>
