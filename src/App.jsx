@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
-import Footer from './components/Footer';
 import Ecosystem from './pages/Ecosystem';
 import Forum from './pages/Forum';
+import Products from './pages/Products';
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/ecosystem" element={<Ecosystem />} />
               <Route path="/forum" element={<Forum />} />
-              <Route path="/products" element={<Ecosystem />} />
+              <Route path="/products" element={<Products />} />
               <Route path="/faq" element={<Ecosystem />} />
             </Routes>
         </main>

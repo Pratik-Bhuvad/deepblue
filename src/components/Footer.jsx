@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
         <div className="col-md-3">
           <h5>Follow Us</h5>
-          <ul className='lg:w-1/3 grid grid-cols-2 grid-rows-2 gap-y-10 justify-center mt-7'>
+          <ul className='lg:w-1/3 grid grid-cols-2 grid-rows-2 gap-y-10 justify-center mt-7 lg:m-auto'>
             <li><a href="#" className="social-facebook"><i className="fa fa-facebook"></i></a></li>
             <li><a href="#" className="social-twitter"><i className="fa fa-twitter"></i></a></li>
             <li><a href="#" className="social-instagram"><i className="fa fa-instagram"></i></a></li>

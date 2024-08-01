@@ -1,8 +1,21 @@
-import React from 'react'
-import Footer from '../components/Footer'
-import '../components/css/ecosystem.css'
+import React from 'react';
+import Footer from '../components/Footer';
+import './CSS/ecosystem.css';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Ecosystem = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000, 
+  };
+
   return (
     <div className="">
       <section className="p-3 pt-[8vh] w-screen bg-[url('src/assets/ecosystem-bg.png')] bg-center bg-cover min-h-screen sm:p-10 sm:pt-[10vh] text-xl box-border">
@@ -11,12 +24,35 @@ const Ecosystem = () => {
         <p className='px-3 leading-8 mt-8 text-justify sm:px-10 font-semibold'>At Deep Blue, our passion lies in discovering and experiencing the world’s most remarkable destinations while diligently working to preserve their natural splendor for the enjoyment of future generations. We firmly believe that travel and sustainability are inherently linked, and we are committed to promoting this harmony by encouraging all our travelers to respect and protect the delicate balance of the environments and wildlife they encounter. By fostering an ethos of responsible tourism, we aim to ensure that the beauty and biodiversity of these extraordinary places are maintained, allowing both current and future explorers to enjoy and learn from them in a sustainable manner.</p>
         <p className='px-3 leading-8 mt-8 text-justify sm:px-10 font-semibold'>Are you eager to deepen your understanding of the extraordinary species that share our planet and learn how you can play a role in their conservation? We invite you to explore the International Union for Conservation of Nature's (IUCN) Red List of Threatened Species. This invaluable resource offers comprehensive information about the status of various species and the threats they face, providing insights into how you can contribute to their protection and preservation. By engaging with the Red List, you can stay informed and take meaningful action to support efforts aimed at safeguarding our planet’s incredible biodiversity.</p>
       </section>
-      {/* <section className="example">Hello</section> */}
+
+      <section id="carousel" className='w-screen h-[80vh] content-center px-10'>
+        <Slider {...settings}>
+          <div className="bg-[url('src/assets/carousel/turtle.png')] bg-cover w-2/5 h-[300px] rounded-lg content-end">
+              <p className='font-semibold p-3 bg-[rgba(0,0,0,0.5)] text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, non? Ullam ea sed, vitae velit neque ut corrupti libero eaque pariatur voluptatibus vel repellendus commodi, aperiam quae! Earum, quam corrupti.</p>
+          </div>
+          <div className="bg-[url('src/assets/carousel/Vaquita.jpeg')] bg-cover w-2/5 h-[300px] rounded-lg content-end">
+              <p className='font-semibold p-3 bg-[rgba(0,0,0,0.5)] text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, non? Ullam ea sed, vitae velit neque ut corrupti libero eaque pariatur voluptatibus vel repellendus commodi, aperiam quae! Earum, quam corrupti.</p>
+          </div>
+          <div className="bg-[url('src/assets/carousel/turtle.png')] bg-cover w-2/5 h-[300px] rounded-lg content-end">
+              <p className='font-semibold p-3 bg-[rgba(0,0,0,0.5)] text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, non? Ullam ea sed, vitae velit neque ut corrupti libero eaque pariatur voluptatibus vel repellendus commodi, aperiam quae! Earum, quam corrupti.</p>
+          </div>
+          <div className="bg-[url('src/assets/carousel/Vaquita.jpeg')] bg-cover w-2/5 h-[300px] rounded-lg content-end">
+              <p className='font-semibold p-3 bg-[rgba(0,0,0,0.5)] text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, non? Ullam ea sed, vitae velit neque ut corrupti libero eaque pariatur voluptatibus vel repellendus commodi, aperiam quae! Earum, quam corrupti.</p>
+          </div>
+          <div className="bg-[url('src/assets/carousel/turtle.png')] bg-cover w-2/5 h-[300px] rounded-lg content-end">
+              <p className='font-semibold p-3 bg-[rgba(0,0,0,0.5)] text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, non? Ullam ea sed, vitae velit neque ut corrupti libero eaque pariatur voluptatibus vel repellendus commodi, aperiam quae! Earum, quam corrupti.</p>
+          </div>
+          <div className="bg-[url('src/assets/carousel/Vaquita.jpeg')] bg-cover w-2/5 h-[300px] rounded-lg content-end">
+              <p className='font-semibold p-3 bg-[rgba(0,0,0,0.5)] text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, non? Ullam ea sed, vitae velit neque ut corrupti libero eaque pariatur voluptatibus vel repellendus commodi, aperiam quae! Earum, quam corrupti.</p>
+          </div>
+        </Slider>
+      </section>
+
       <footer>
         <Footer />
       </footer>
     </div>
-  )
+  );
 }
 
-export default Ecosystem
+export default Ecosystem;

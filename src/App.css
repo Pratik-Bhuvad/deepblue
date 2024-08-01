@@ -34,7 +34,9 @@ header{
 #otherResponses::-webkit-scrollbar-thumb {
   background: #888;
 }
-
+.slick-slide > div{
+  margin: 0 10px;
+}
 
 @media screen and (max-width:'768px') {
     .navbar{
