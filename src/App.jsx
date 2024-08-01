@@ -28,9 +28,6 @@ function App() {
               <Route path="/faq" element={<Ecosystem />} />
             </Routes>
         </main>
-        <footer>
-          <Footer />
-        </footer>
       </>
     </Router>
   )

@@ -5,7 +5,7 @@ import './css/Navbar.css';
 
 const Navbar = () => {
   // Set visibility based on wider range to include tablets
-  const [isVisible, setIsVisible] = useState(window.innerWidth >= 1280);
+  const [isVisible, setIsVisible] = useState(window.innerWidth >= 1024);
 
   const toggleVisibility = () => {
     setIsVisible(!isVisible);
@@ -13,7 +13,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 1280) {
+      if (window.innerWidth >= 1024) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -30,7 +30,7 @@ const Navbar = () => {
 
   const handleLinkClick = () => {
     // Close navbar for screens smaller than 1280px when a link is clicked
-    if (window.innerWidth < 1280) {
+    if (window.innerWidth < 1024) {
       setIsVisible(false);
     }
   };
