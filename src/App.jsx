@@ -13,7 +13,7 @@ function App() {
       <>
         <header>
           <Link to='/'>
-            <h4 className='sm:uppercase flex items-center font-extrabold text-sm leading-3 md:text-lg md:leading-5'>
+            <h4 className='sm:uppercase flex items-center font-extrabold text-sm leading-3 sm:text-lg sm:leading-5'>
               <span>TE<br />AM</span> Techno
             </h4>
           </Link>
