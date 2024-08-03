@@ -8,7 +8,7 @@ import Forum from './pages/Forum';
 import Products from './pages/Products';
 import Donate from './pages/Donate';
 import About from './pages/About';
-import SignIn from './components/SignIn';
+import SignUp from './components/SignUp';
 import Login from './components/LogIn';
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
               <Route path="/products" element={<Products />} />
               <Route path="/donate" element={<Donate />} />
               <Route path='/aboutus' element={<About />} />
-              <Route path='/signin' element={<SignIn />} />
+              <Route path='/signin' element={<SignUp />} />
               <Route path='/login' element={<Login />} />
             </Routes>
         </main>
