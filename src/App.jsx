@@ -6,6 +6,10 @@ import Home from './pages/Home'
 import Ecosystem from './pages/Ecosystem';
 import Forum from './pages/Forum';
 import Products from './pages/Products';
+import Donate from './pages/Donate';
+import About from './pages/About';
+import SignIn from './components/SignIn';
+import Login from './components/LogIn';
 
 function App() {
   return (
@@ -25,7 +29,10 @@ function App() {
               <Route path="/ecosystem" element={<Ecosystem />} />
               <Route path="/forum" element={<Forum />} />
               <Route path="/products" element={<Products />} />
-              <Route path="/faq" element={<Ecosystem />} />
+              <Route path="/donate" element={<Donate />} />
+              <Route path='/aboutus' element={<About />} />
+              <Route path='/signin' element={<SignIn />} />
+              <Route path='/login' element={<Login />} />
             </Routes>
         </main>
       </>

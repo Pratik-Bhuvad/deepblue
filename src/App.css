@@ -36,6 +36,10 @@ header{
 }
 .slick-slide > div{
   margin: 0 10px;
+  height: 70vh;
+}
+.slick-slide{
+  height: 70vh;
 }
 
 @media screen and (max-width:'768px') {
