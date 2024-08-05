@@ -3,7 +3,7 @@ import Footer from '../components/Footer'
 
 const people = [
     {
-        name: 'Devesh Nail',
+        name: 'Devesh Naik',
         description: "Devesh is a versatile and innovative team member with a specialization in UI/UX Designing. His proficiency in Designing enhances our team’s capability to tackle complex challenges. Devesh’s analytical skills and collaborative spirit are instrumental in achieving our objectives.",
         imageUrl: 'src/assets/user.png',
     },

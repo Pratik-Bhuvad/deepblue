@@ -7,7 +7,7 @@ import './css/Navbar.css';
 
 const Navbar = () => {
   // Set visibility based on wider range to include tablets
-  const [isVisible, setIsVisible] = useState(window.innerWidth >= 1024);
+  const [isVisible, setIsVisible] = useState(window.innerWidth >= 1280);
 
   const toggleVisibility = () => {
     setIsVisible(!isVisible);
@@ -15,7 +15,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 1024) {
+      if (window.innerWidth >= 1280) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -32,7 +32,7 @@ const Navbar = () => {
 
   const handleLinkClick = () => {
     // Close navbar for screens smaller than 1280px when a link is clicked
-    if (window.innerWidth < 1024) {
+    if (window.innerWidth < 1280) {
       setIsVisible(false);
     }
   };
@@ -41,13 +41,13 @@ const Navbar = () => {
     <>
       <div className='flex flex-row w-3/5 bg-red-700 pr-5'>
         <i
-          className={`fa-solid ${isVisible ? 'fa-times' : 'fa-bars'} pr-5 float-right absolute right-0 top-4 lg:hidden`}
+          className={`fa-solid ${isVisible ? 'fa-times' : 'fa-bars'} pr-5 float-right absolute right-0 top-4 xl:hidden`}
           onClick={toggleVisibility}
         ></i>
         <AnimatePresence>
           {(isVisible || window.innerWidth >= 1280) && (
             <motion.nav
-              className='absolute top-7 right-5 w-2/4 h-[50vh] lg:w-2/5 lg:h-full lg:top-0 flex-col items-start justify-evenly pl-5 bg-[#3b7ddb96] lg:flex-row lg:items-center lg:bg-transparent *:w-full lg:*:w-auto md:*:text-lg'
+              className='absolute top-7 right-5 w-2/4 h-[50vh] xl:w-2/5 xl:h-full xl:top-0 flex-col items-start justify-evenly pl-5 bg-[#3b7ddb96] xl:flex-row xl:items-center xl:bg-transparent *:w-full xl:*:w-auto md:*:text-lg'
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
